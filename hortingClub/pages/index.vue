@@ -6,15 +6,16 @@
       <promo-cards :data="promoData" />
     </div> -->
 
-    <!-- <text-block :data="textBlockAboutUs" /> -->
+<!-- 
+    <text-block :data="textBlockAboutUs" /> 
 
-    <!-- <title-promo :data="titlePromoData_1" /> -->
+    <title-promo :data="titlePromoData_1" /> 
 
-    <!-- <text-block :data="textBlockOurBenefits" />
+     <text-block :data="textBlockOurBenefits" />
 
     <title-promo :data="titlePromoData_2" /> -->
 
-    <!-- <v-parallax style="height:auto" src="/img/about/image4.jpg">
+     <!-- <v-parallax style="height:auto" src="/img/about/image4.jpg">
       <v-container>
         <v-layout row justify-end align-center fill-height>
           <v-flex xs12 sm7 md6>
@@ -31,12 +32,12 @@
         Новости
       </h2>
       <news :data="newsData" />
-<!-- 
-      <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
+
+      <!-- <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
         <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">События</span>
         Ближайшие События
-      </h2> -->
-      <!-- <news :data="newsData" /> -->
+      </h2> 
+      <news :data="newsData" /> -->
     </v-container>
 
   </div>

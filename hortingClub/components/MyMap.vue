@@ -4,8 +4,8 @@
         <v-layout row wrap>
             <v-flex xs12 md6 data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
                      <h2 data-aos="fade-right" data-aos-duration="600" class="std__title text__black">
-            <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">Места проведения тренеровок</span>
-          Адресс
+            <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">контакти </span>
+          НФХФУ та обласних фед-цій
         </h2>
         <ul class="tab_list layout row wrap" data-aos="slide-right" data-aos-duration="1000">
             <li v-for="(item,i) in  locationData" :key="i" class="tab"
@@ -52,7 +52,7 @@
 
                 locationData: [{
                         active: 1,
-                        title: 'Место 1',
+                        title: 'Киев',
                         text: 'Place 1 active  Plase for text',
                         contactsData: [{
                                 contacsTitle: 'Adress',
@@ -81,7 +81,7 @@
                     },
                     {
                         active: 2,
-                        title: 'Место 2',
+                        title: 'Днепропетровск',
                         text: 'Place 2 active  Plase for text',
                         contactsData: [{
                                 contacsTitle: 'Adress',
@@ -110,7 +110,7 @@
                     },
                     {
                         active: 3,
-                        title: 'Место 3',
+                        title: 'Черкассы',
                         text: 'Place 3 active  Plase for text',
                         contactsData: [{
                                 contacsTitle: 'Adress',
@@ -135,6 +135,93 @@
                         position: {
                             lat: 50.4547,
                             lng: 20.5238
+                        }
+                    },
+                     {
+                        active: 4,
+                        title: 'Одесса',
+                        text: 'Place 4 active  Plase for text',
+                        contactsData: [{
+                                contacsTitle: 'Adress',
+                                contactsContent: [
+                                    '3 4096 N Highland St, Arlington VA 32101, USA',
+                                ]
+                            },
+                            {
+                                contacsTitle: 'Phone',
+                                contactsContent: [
+                                    '800 1234 56 78',
+                                    '800 1234 56 78'
+                                ]
+                            },
+                            {
+                                contacsTitle: 'mail',
+                                contactsContent: [
+                                    'school@company.com',
+                                ]
+                            }
+                        ],
+                        position: {
+                            lat: 54.4547,
+                            lng: 20.5238
+                        }
+                    },
+                     {
+                        active: 5,
+                        title: 'Кировоград',
+                        text: 'Place 5 active  Plase for text',
+                        contactsData: [{
+                                contacsTitle: 'Adress',
+                                contactsContent: [
+                                    '3 4096 N Highland St, Arlington VA 32101, USA',
+                                ]
+                            },
+                            {
+                                contacsTitle: 'Phone',
+                                contactsContent: [
+                                    '800 1234 56 78',
+                                    '800 1234 56 78'
+                                ]
+                            },
+                            {
+                                contacsTitle: 'mail',
+                                contactsContent: [
+                                    'school@company.com',
+                                ]
+                            }
+                        ],
+                        position: {
+                            lat: 52.4547,
+                            lng: 20.5238
+                        }
+                    },
+                    {
+                        active: 6,
+                        title: 'Киевская Обласная',
+                        text: 'Place 6 active  Plase for text',
+                        contactsData: [{
+                                contacsTitle: 'Adress',
+                                contactsContent: [
+                                    '1 4096 N Highland St, Arlington VA 32101, USA',
+                                ]
+                            },
+                            {
+                                contacsTitle: 'Phone',
+                                contactsContent: [
+                                    '800 1234 56 78',
+                                    '800 1234 56 78'
+                                ]
+                            },
+                            {
+                                contacsTitle: 'mail',
+                                contactsContent: [
+                                    'school@company.com',
+                                ]
+                            }
+                        ],
+                        position: {
+                            lat: 50.4547,
+                            lng: 31.5238
                         }
                     },
                 ],

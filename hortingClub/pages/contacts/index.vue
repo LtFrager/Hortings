@@ -1,7 +1,39 @@
 <template>
     <div>
         <my-map />
+
+        <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"
+            class="std__title text__black text-xs-center">
+            <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">контакти </span>
+            Секцiй
+        </h2>
+
+        <v-container>
+            <v-layout row wrap>
+                <v-flex xs12 sm6 md4 v-for="item in 16" :key="item">
+                    <h3>City</h3>
+                    <ul>
+                        <li>
+                            section name
+                        </li>
+
+                        <li>
+                            section name
+                        </li>
+
+                        <li>
+                            section name
+                        </li>
+
+                        <li>
+                            section name
+                        </li>
+                    </ul>
+                </v-flex>
+            </v-layout>
+        </v-container>
     </div>
+
 </template>
 <script>
     import PromoCards from '@/components/PromoCards'

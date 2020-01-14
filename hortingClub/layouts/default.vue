@@ -3,10 +3,12 @@
     <div class="navbar">
       <v-container class="layout justify-space-between align-center" style="padding-top:0;padding-bottom:0;">
 
-        <div class="logo-block">
-          <img width="100%" src="/logo.png" alt="">
-          <h2>Horting <span>Fencing</span></h2>
-        </div>
+        <nuxt-link style="text-decoration: none;" to="/">
+          <div class="logo-block">
+            <img width="100%" src="/logo.png" alt="">
+            <h2>Horting <span>Fencing</span></h2>
+          </div>
+        </nuxt-link>
 
         <ul class="nav__list hidden-sm-and-down">
           <li v-for="(item,i) in navigationData" :key="i">
@@ -57,7 +59,7 @@
 
     </v-navigation-drawer>
 
-    <v-content style="margin-top:76px;">
+    <v-content style="padding-top:76px;">
       <nuxt />
     </v-content>
 
@@ -124,40 +126,53 @@
       return {
         drawer: null,
         navigationData: [{
-            title: 'Главная',
+            title: 'Головна',
             link: '/'
           },
           {
-            title: 'О хортинг фехтовнии',
-            link: '/about-horting-fencing'
-          },
-          {
-            title: 'О федерации',
+            title: 'про хф',
             link: '',
             chield: [{
-                title: 'Цели и задачи',
-                link: '/about-federation/our-goals',
+                title: 'ЗАГАЛЬНА ІНФОРМАЦІЯ ',
+                link: '/about-horting-fencing/info',
               },
               {
-                title: 'Руководство',
-                 link: '/about-federation/governance',
+                title: 'СПОРЯДЖЕННЯ ТА ЕКІПИРУВАННЯ ',
+                link: '/about-horting-fencing/gear',
               },
               {
-                title: 'Партнёры',
-                 link: '/about-federation/partners',
-              },
-              {
-                title: 'Документация',
-                link: '/about-federation/documents',
-              },
-              {
-                title: 'Вступить',
-                 link: '/about-federation/join',
+                title: 'ПРАВИЛА ЗМАГАНЬ',
+                link: '/about-horting-fencing/tournament-rules',
               },
             ]
           },
           {
-            title: 'Новости и События',
+            title: 'федерація',
+            link: '',
+            chield: [{
+                title: 'ПРО ФЕДЕРАЦІЮ',
+                link: '/about-federation/our-goals',
+              },
+              {
+                title: 'КЕРІВНИЦТВО',
+                link: '/about-federation/governance',
+              },
+              {
+                title: 'ПАРТНЕРИ',
+                link: '/about-federation/partners',
+              },
+              {
+                title: 'ДОКУМЕНТИ',
+                link: '/about-federation/documents',
+              },
+              {
+                title: 'ВСТУПИТИ ДО ФЕДЕРАЦІЇ',
+                link: '/about-federation/join',
+              },
+            ]
+          },
+          {
+            title: 'новини',
             link: '/news'
           },
           // {
@@ -178,7 +193,7 @@
           //   ]
           // },
           {
-            title: 'Контакты',
+            title: 'контакти та представництва',
             link: '/contacts'
           },
         ]

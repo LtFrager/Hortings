@@ -23,7 +23,9 @@ module.exports = {
             { src: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js' },
         ]
     },
-    plugins: ['~/plugins/vuetify.js', { src: '~/plugins/aos', ssr: false }, "~/plugins/google-maps", ],
+    plugins: ['~/plugins/vuetify.js', 
+    // { src: '~/plugins/aos', ssr: false },
+     "~/plugins/google-maps", ],
     css: ['~/assets/style/app.styl'],
     /*
      ** Customize the progress bar color

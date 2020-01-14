@@ -15,9 +15,13 @@
                     <div class="item__img" :style="'background-image:url(' + item.img +')'">
                         <nuxt-link v-if="item.link" :to="item.link" class="item__img-link">
                         </nuxt-link>
-                        
+
                         <a v-if="item.download" :href="item.download" download class="item__img-link">
                         </a>
+
+                        <div class="tag-field"  v-if="item.tagname">
+                            <span v-for="(item,i) in item.tagname" :key="i" class="tag-field_tag">{{item}}</span>
+                        </div>
                     </div>
                     <v-card-text>
                         <h6 class="item__date">
@@ -166,7 +170,8 @@
         }
 
         .item__img {
-            height: 220px;
+            height: 0;
+            padding-top: 85%;
             background-position: center;
             background-size: cover;
             position: relative;
@@ -177,6 +182,25 @@
                 height: 100%;
                 background: none;
             }
+
+            .tag-field {
+                flex-wrap: wrap-reverse;
+                display: flex;
+                flex-direction: row-reverse;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                .tag-field_tag {
+                    background: #111;
+                    color: #FBBC04;
+                    padding: 2px 6px;
+                    font-size: 12px;
+                    display: block;
+                    margin: 2px;
+                }
+            }
+
         }
 
         .item__date {
