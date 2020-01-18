@@ -8,30 +8,7 @@
             Секцiй
         </h2>
 
-        <v-container>
-            <v-layout row wrap>
-                <v-flex xs12 sm6 md4 v-for="item in 16" :key="item">
-                    <h3>City</h3>
-                    <ul>
-                        <li>
-                            section name
-                        </li>
-
-                        <li>
-                            section name
-                        </li>
-
-                        <li>
-                            section name
-                        </li>
-
-                        <li>
-                            section name
-                        </li>
-                    </ul>
-                </v-flex>
-            </v-layout>
-        </v-container>
+        <sections :data="SectionsData" />
     </div>
 
 </template>
@@ -40,14 +17,16 @@
     import TitlePromo from '@/components/TitlePromo'
     import ListBlock from '@/components/ListBlock'
     import TextBlock from '@/components/TextBlock'
-    import MyMap from '@/components/MyMap'
+    import MyMap from '@/components/contacts/MyMap'
+    import Sections from '@/components/contacts/Sections'
     export default {
         components: {
             PromoCards,
             TitlePromo,
             ListBlock,
             TextBlock,
-            MyMap
+            MyMap,
+            Sections
         },
         data() {
             return {
@@ -71,10 +50,87 @@
                     subtitle_bottom: 'Наши телефоны: 068 978-48-85, 095 282-09-67, 073 155-39-07,E-mail: horting.fencing@gmail.com, kendo.obolon@gmail.com ',
                 }],
 
+                SectionsData: [{
+                        cityName: "City1",
+                        citySections: [{
+                                sectionName: "Section 1",
+                                sectionsDescr: [{
+                                    sectionPhone: ["phone1", "phone2"],
+                                    sectionEmail: ["mail1", "mail2"],
+                                    sectionAdress: ["link", "adress"],
+                                }]
+                            },
+                            {
+                                sectionName: "Section 1",
+                                sectionsDescr: [{
+                                    sectionPhone: ["phone1", "phone2"],
+                                    sectionEmail: ["mail1", "mail2"],
+                                    sectionAdress: ["link", "adress"],
+                                }]
+                            }
+                        ]
+                    },
+
+                    {
+                        cityName: "City2",
+                        citySections: [{
+                            sectionName: "Section 1",
+                            sectionsDescr: [{
+                                sectionPhone: ["phone1", "phone2"],
+                                sectionEmail: ["mail1", "mail2"],
+                                sectionAdress: ["link", "adress"],
+                            }]
+                        }]
+                    }
+
+                ]
             }
         }
     }
 </script>
 <style lang="scss" scoped>
+    .section_list-city {
+        font-size: 24px;
+        font-weight: 800;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
 
+    .section_list {
+        padding: 0;
+        list-style-type: none;
+
+        .section_list-item {
+            text-transform: uppercase;
+            font-size: 16px;
+            line-height: 1;
+            font-weight: 400;
+            color: #232a35;
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .v-menu__content {
+        min-width: 200px !important;
+        width: fit-content !important;
+        max-width: 100% !important;
+        background: #fff !important;
+    }
+
+    .list_item-descr_list {
+        padding: 6px 8px;
+
+        .descr-item {
+            list-style-type: none;
+            color: #9f9f9f;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 300;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+            line-height: 1;
+            text-transform: none;
+        }
+    }
 </style>
