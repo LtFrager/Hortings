@@ -55,10 +55,10 @@
         }
 
         .item__img {
-            height: 280px;
-            background-position: center;
-            background-size: cover;
-            position: relative;
+                background-position: top;
+                background-size: cover;
+                position: relative;
+                padding-top: 100%;
 
             .item__img-link {
                 position: absolute;
@@ -66,6 +66,7 @@
                 height: 100%;
                 background: none;
                 transition: .5s;
+                top: 0;
 
                 &:hover {
                     background: rgba(244, 112, 112, 0.3);

@@ -105,7 +105,7 @@
       <div class="footer__bottom">
         <v-container>
           <p class="copy">
-            © 2019 Sportek. All rights reserved.
+            © 2020 HORTING FENCING®. All rights reserved.
           </p>
         </v-container>
       </div>
@@ -151,7 +151,7 @@
             link: '',
             chield: [{
                 title: 'ПРО ФЕДЕРАЦІЮ',
-                link: '/about-federation/our-goals',
+                link: '/about-federation/about',
               },
               {
                 title: 'КЕРІВНИЦТВО',
@@ -161,10 +161,10 @@
                 title: 'ПАРТНЕРИ',
                 link: '/about-federation/partners',
               },
-              {
-                title: 'ДОКУМЕНТИ',
-                link: '/about-federation/documents',
-              },
+              // {
+              //   title: 'ДОКУМЕНТИ',
+              //   link: '/about-federation/documents',
+              // },
               {
                 title: 'ВСТУПИТИ ДО ФЕДЕРАЦІЇ',
                 link: '/about-federation/join',

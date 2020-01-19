@@ -38,7 +38,7 @@
                         <v-card-actions>
                             <v-spacer></v-spacer>
                             <nuxt-link v-if="item.link" :to="item.link" class="item__arrow-link">
-                                Read more
+                               Читати більше
                             </nuxt-link>
 
                             <a v-if="item.download" :href="item.download" download class="item__arrow-link">

@@ -25,25 +25,25 @@
         data() {
             return {
                 ourPhotos: [{
-                        img: '/img/index/promo/page-image1.jpg',
+                        img: '/img/partners/chorting_logo_white.jpg',
                         link:'',
-                        category: 'Должность',
-                        title: 'Имя фамилия',
-                        text: 'НЕмного текста (опционально)',
+                        category: '',
+                        title: '',
+                        text: 'НАЦІОНАЛЬНА ФЕДЕРАЦІЯ БОЙОВОГО ХОРТИНГУ УКРАЇНИ',
                     },
                     {
-                        img: '/img/index/promo/page-image1.jpg',
+                         img: '/img/partners/partners_nalogoviki.jpg',
                         link:'',
-                        category: 'Должность',
-                        title: 'Имя фамилия',
-                        text: 'НЕмного текста (опционально)',
+                        category: '',
+                        title: '',
+                        text: 'НАВЧАЛЬНО-НАУКОВИЙ ІНСТИТУТ СПЕЦІАЛЬНОЇ ФІЗИЧНОЇ І БОЙОВОЇ ПІДГОТОВКИ ТА РЕАБІЛІТАЦІЇ ПРИ НУДФСУ',
                     },
                    {
-                        img: '/img/index/promo/page-image1.jpg',
+                          img: '/img/partners/udfsu_kafedra_logo2.jpg',
                         link:'',
-                        category: 'Должность',
-                        title: 'Имя фамилия',
-                        text: 'НЕмного текста (опционально)',
+                        category: '',
+                        title: '',
+                        text: 'КАФЕДРА СПЕЦІАЛЬНИХ ДИСЦИПЛІН ТА ОРГАНІЗАЦІЇ ПРОФЕСІЙНОЇ ПІДГОТОВКИ НУДФСУ',
                     },
                 ],
             }

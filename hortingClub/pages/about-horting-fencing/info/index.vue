@@ -4,10 +4,10 @@
 
         <div class="top-bot-paddimg">
             <v-container>
-                <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
+                <h2 style="text-transform:uppercase" data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
                     <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">ХОРТИНГ
                         ФЕХТУВАННЯ </span>
-                    більш ніж спорт!
+                    Більш ніж спорт!
                 </h2>
 
                 <p class="std__text" data-aos="fade-up" data-aos-duration="1000">
@@ -45,7 +45,7 @@
             </v-container>
         </v-parallax> -->
 
-        <!-- <title-promo :data="titlePromoData" /> -->
+        <title-promo :data="titlePromoData" />
 
         <text-block :data="textBlock2" />
 
@@ -86,30 +86,30 @@
             return {
                 textBlock1: [{
                     textLeft: true,
-                    img: '/img/about-horting/1.jpg',
-                    subtitle_top: 'ЗАГАЛЬНА ІНФОРМАЦІЯ',
-                    title: 'ХОРТИНГ ФЕХТУВАННЯ?',
-                    boldText: 'ХОРТИНГ ФЕХТУВАННЯ, або український шаблевий двобій',
+                    img: '/img/about-horting/about_hf-3.jpg',
+                    subtitle_top: 'Загальна інформація',
+                    title: 'ЩО ТАКЕ ХОРТИНГ ФЕХТУВАННЯ?',
+                    boldText: '',
                     paragrafs: [
-                        'новітній український вид спорту, бойове мистецтво та засіб оздоровлення тіла і духу, що сьогодні активно розвивається в Україні! Він поєднує в собі фехтування на шаблях з елементами рукопашної боротьби ХОРТИНГ.',
+                        'ХОРТИНГ ФЕХТУВАННЯ, або український шаблевий двобій, це новітній український вид спорту, бойове мистецтво та засіб оздоровлення тіла і духу, що сьогодні активно розвивається в Україні! Він поєднує в собі фехтування на шаблях з елементами рукопашної боротьби ХОРТИНГ.',
                     ]
                 }],
 
                 titlePromoData: [{
-                    img: '/img/about-horting/3.jpg',
+                    img: '/img/about-horting/4.jpg',
                     subtitle_top: 'ХОРТИНГ ФЕХТУВАННЯ',
                     title: 'фехтування для всіх!',
                     subtitle_bottom: 'ХОРТИНГ ФЕХТУВАННЯ - це інклюзивний вид спорту, займатись яким можна починаючи вже з 6 років. В ньому немає ніяких вікових та гендерних обмежень!'
                 }],
 
-                textBlock2: [{
-                    textLeft: false,
-                    img: '/img/about-horting/1.jpg',
-                    subtitle_top: 'ХОРТИНГ ФЕХТУВАННЯ',
-                    title: 'фехтування для всіх!',
-                    boldText: 'ХОРТИНГ ФЕХТУВАННЯ - це інклюзивний вид спорту, займатись яким можна починаючи вже з 6 років. В ньому немає ніяких вікових та гендерних обмежень!',
-                    paragrafs: []
-                }],
+                // textBlock2: [{
+                //     textLeft: false,
+                //     img: '/img/about-horting/1.jpg',
+                //     subtitle_top: 'ХОРТИНГ ФЕХТУВАННЯ',
+                //     title: 'фехтування для всіх!',
+                //     boldText: 'ХОРТИНГ ФЕХТУВАННЯ - це інклюзивний вид спорту, займатись яким можна починаючи вже з 6 років. В ньому немає ніяких вікових та гендерних обмежень!',
+                //     paragrafs: []
+                // }],
             }
         }
     }

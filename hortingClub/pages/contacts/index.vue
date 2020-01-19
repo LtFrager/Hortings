@@ -50,7 +50,8 @@
                     subtitle_bottom: 'Наши телефоны: 068 978-48-85, 095 282-09-67, 073 155-39-07,E-mail: horting.fencing@gmail.com, kendo.obolon@gmail.com ',
                 }],
 
-                SectionsData: [{
+                SectionsData: [
+                    {
                         cityName: "City1",
                         citySections: [{
                                 sectionName: "Section 1",
@@ -82,7 +83,6 @@
                             }]
                         }]
                     }
-
                 ]
             }
         }

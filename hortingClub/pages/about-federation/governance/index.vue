@@ -2,19 +2,19 @@
     <div>
           <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
                 <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000"
-                    class="subtitle">Наша команда</span>
+                    class="subtitle"></span>
                 Руководство
             </h2>
 
-         <promo-cards :data="ourPhotos" />
+         <promo-cards :data="ourPhotos1" />
 
              <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
                 <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000"
-                    class="subtitle">Наша команда</span>
+                    class="subtitle"></span>
                 Почётные члены
             </h2>
 
-         <promo-cards :data="ourPhotos" />
+         <promo-cards :data="ourPhotos2" />
 
     </div>
 </template>
@@ -32,26 +32,48 @@
         },
         data() {
             return {
-                ourPhotos: [{
-                        img: '/img/index/promo/page-image1.jpg',
+                ourPhotos1: [{
+                        img: '/img/governance/pres_faleev.png',
                         link:'',
-                        category: 'Должность',
-                        title: 'Имя фамилия',
-                        text: 'НЕмного текста (опционально)',
+                        category: 'Президент НФХФУ',
+                        title: 'Фалєєв Роман Геннадійович ',
+                        text: '',
                     },
                     {
-                        img: '/img/index/promo/page-image1.jpg',
+                        img: '/img/governance/pres_zinchenko.jpg',
                         link:'',
-                        category: 'Должность',
-                        title: 'Имя фамилия',
-                        text: 'НЕмного текста (опционально)',
+                        category: 'Віце-президент НФХФУ',
+                        title: 'Зінченко Валерій Олександрович',
+                        text: '',
+                    },
+                //    {
+                //         img: '/img/governance/pres_havrilyak.jpg',
+                //         link:'',
+                //         category: 'Должность',
+                //         title: 'Имя фамилия',
+                //         text: 'НЕмного текста (опционально)',
+                //     },
+                ],
+                ourPhotos2: [{
+                        img: '/img/governance/pochet_eremenko.jpg',
+                        link:'',
+                        category: '',
+                        title: 'Єрьоменко Едуард Анатолійович',
+                        text: '',
+                    },
+                    {
+                        img: '/img/governance/pochet_kuzora.jpg',
+                        link:'',
+                        category: '',
+                        title: 'КУЗОРА ІВАН ВАСИЛЬОВИЧ',
+                        text: '',
                     },
                    {
-                        img: '/img/index/promo/page-image1.jpg',
+                        img: '/img/governance/pochet_raevsky.jpg',
                         link:'',
-                        category: 'Должность',
-                        title: 'Имя фамилия',
-                        text: 'НЕмного текста (опционально)',
+                        category: '',
+                        title: 'Раєвський Сергій Віссаріонович',
+                        text: '',
                     },
                 ],
             }

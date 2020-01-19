@@ -6,7 +6,7 @@
       <promo-cards :data="promoData" />
     </div> -->
 
-<!-- 
+    <!-- 
     <text-block :data="textBlockAboutUs" /> 
 
     <title-promo :data="titlePromoData_1" /> 
@@ -15,7 +15,7 @@
 
     <title-promo :data="titlePromoData_2" /> -->
 
-     <!-- <v-parallax style="height:auto" src="/img/about/image4.jpg">
+    <!-- <v-parallax style="height:auto" src="/img/about/image4.jpg">
       <v-container>
         <v-layout row justify-end align-center fill-height>
           <v-flex xs12 sm7 md6>
@@ -61,26 +61,26 @@
     data() {
       return {
         topSliderData: [{
-            img: '/img/news-slider/1.jpg',
+            img: '/img/news-slider/2.jpg',
             orangeTitle: 'ХОРТИНГ',
             title: 'ФЕХТУВАННЯ',
-            text: 'сучасний спорт з давньою традицією Фехтувати так, як фехтували наші предки! Техніка фехтування в спортивному двобої у хортинг фехтуванні ідентична бойовій. ',
+            text: 'Новітній український спорт з давньою традицією.',
             link: ''
           },
-          {
-            img: '/img/news-slider/1.jpg',
-            orangeTitle: 'ХОРТИНГ',
-            title: 'ФЕХТУВАННЯ',
-            text: 'розвиває логіку та стратегічне мислення',
-            link: ''
-          },
-            {
-            img: '/img/news-slider/1.jpg',
-            orangeTitle: 'ХОРТИНГ',
-            title: 'ФЕХТУВАННЯ',
-            text: 'це видовищне та яскраве спортивне шоу!',
-            link: ''
-          },
+          // {
+          //   img: '/img/news-slider/1.jpg',
+          //   orangeTitle: 'ХОРТИНГ',
+          //   title: 'ФЕХТУВАННЯ',
+          //   text: 'розвиває логіку та стратегічне мислення',
+          //   link: ''
+          // },
+          //   {
+          //   img: '/img/news-slider/1.jpg',
+          //   orangeTitle: 'ХОРТИНГ',
+          //   title: 'ФЕХТУВАННЯ',
+          //   text: 'це видовищне та яскраве спортивне шоу!',
+          //   link: ''
+          // },
         ],
 
         promoData: [{
@@ -118,7 +118,7 @@
             'Затем, чтобы соединить человека и клинок с помощью древних знаний и современной науки и наилучшим образом раскрыть и реализовать заложенный в них потенциал!'
           ]
         }],
-       
+
         textBlockOurBenefits: [{
           textLeft: true,
           img: '/img/index/index3.jpg',
@@ -183,35 +183,37 @@
 
 
 
-         newsData: [{
-                        id: 1,
-                        tags: ['all', 'tag1'],
-                        img: '/img/index/news/img1.jpg',
-                        date: 'Feb 11, 2019',
-                        title: 'WHAT DOES DISCIPLINE LOOK LIKE?',
-                        link: '/news/id',
-                         download: '/img/index/news/img1.jpg',
-                        text: 'Most of us can agree that discipline is one of the most ...',
-                    },
-                    {
-                        id: 2,
-                        tags: ['all', 'tag1'],
-                        img: '/img/index/news/img1.jpg',
-                        date: 'Feb 11, 2019',
-                        title: 'WHAT DOES DISCIPLINE LOOK LIKE?',
-                        link: '/news/id',
-                        text: 'Most of us can agree that discipline is one of the most ...',
-                    },
-                    {
-                        id: 3,
-                        tags: ['all', 'tag2'],
-                        img: '/img/index/news/img1.jpg',
-                        date: 'Feb 11, 2019',
-                        title: 'WHAT DOES DISCIPLINE LOOK LIKE?',
-                        link: '/news/id',
-                        text: 'Most of us can agree that discipline is one of the most ...',
-                    },
-                ],
+        newsData: [{
+            id: 3,
+            tags: ['all', 'tag1'],
+            tagname: [],
+            img: 'http://kubg.edu.ua/images/phocagallery/Podii/2019/12_12_fzfvs/12_12_fzfvs_09.jpg',
+            date: '12.12.2019',
+            title: 'Презентація ХОРТИНГ ФЕХТУВАННЯ',
+            link: '/news/temp3',
+            text: 'Презентація ХОРТИНГ ФЕХТУВАННЯ в рамках VІІ Всеукраїнської науково-практичнаої конференціяї «Фізичне виховання, спорт та здоров’я людини: досвід, проблеми, перспективи» ...',
+          },
+          {
+            id: 1,
+            tags: ['all', 'tag1'],
+            tagname: [],
+            img: '/img/tempnews/1.jpg',
+            date: '11.11.2019',
+            title: 'ХОРТИНГ ФЕХТУВАННЯ у Національному університеті державної фіскальної служби України',
+            link: '/news/temp1',
+            text: '11 грудня 2019 року у стінах Національного університету державної фіскальної служби України пройшла презентація ХОРТИНГ ФЕХТУВАННЯ ...',
+          },
+          {
+            id: 2,
+            tags: ['all', 'tag1'],
+            tagname: [],
+            img: 'http://kam.gov.ua/ua/osximage/pg/190819190982147_p13_2m/pic.jpg',
+            date: '18.08.2019',
+            title: '«Фестиваль здорового способу життя» у місті Кам’янське',
+            link: '/news/temp2',
+            text: '18 серпня у Кам’янському за підтримки міського голови Андрія Білоусова НФХФУ прийняла участь у спортивному святі, яке об’єднало більше 20-ти популярних видів спорту – «Фестиваль здорового способу життя». ...',
+          },
+        ],
 
       }
     }

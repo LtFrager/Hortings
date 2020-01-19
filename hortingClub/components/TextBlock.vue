@@ -29,6 +29,7 @@
 <style lang="scss" scoped>
   .padding {
     padding: 40px 0px 20px;
+    min-height: 500px;
   }
   .subtitle{
     text-transform: uppercase;
@@ -37,8 +38,8 @@
     margin-bottom: 8px;
   }
   .my-card{
-    background: rgba(255,255,255,.9);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0);
+    // background: rgba(255,255,255,.9);
+    // box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0);
     padding: 8px;
     color: #333;
   }

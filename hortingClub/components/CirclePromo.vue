@@ -1,6 +1,4 @@
 <template>
-
-
     <v-parallax style="height:auto" src="/img/index/index2.jpg">
         <v-container>
             <div class="our-skils__block">
