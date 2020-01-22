@@ -6,8 +6,8 @@
       <promo-cards :data="promoData" />
     </div> -->
 
-    <!-- 
-    <text-block :data="textBlockAboutUs" /> 
+ 
+    <!-- <text-block :data="textBlockAboutUs" /> 
 
     <title-promo :data="titlePromoData_1" /> 
 
@@ -27,9 +27,8 @@
 
     <v-container>
       <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
-        <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">НОВОСТИ И
-          ОБЪЯВЛЕНИЯ</span>
-        Новости
+        <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">КОРИСНА ІНФОРМАЦІЯ</span>
+        НОВИНИ
       </h2>
       <news :data="newsData" />
 

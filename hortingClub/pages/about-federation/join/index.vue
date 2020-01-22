@@ -13,14 +13,17 @@
                 1. Досягти віку 14 (чотирнадцять) років.<br>
                 2. Написати заяву на особистий вступ до федерації, в установленій формі.<br>
                 3. Заповнити анкету індивідуального члена НФХФУ, в установленій формі<br>
-                4. Сплатити вступний внесок в розмірі 100 грн.?<br>
+                4. Сплатити вступний внесок в розмірі 300 гривень.<br>
                 5. Щорічно сплачувати членський внесок в розмірі, встановленому рішенням керівного органу - Президією ГО
                 «Національна федерація хортинг фехтування України».
             </p>
 
             <p class="std__text" data-aos="fade-up" data-aos-duration="1000">
-                <a href="downloads/anketa_head.doc" download>
-                    ССЫЛКИ НА ФАЙЛЫ ДОКУМЕНТОВ</a></p>
+                <a href="/downloads/anketa_member.doc" download>
+                     Анкета</a><br>
+                         <a href="/downloads/zayava.doc" download>
+                    Заява</a>
+                    </p>
 
             <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
                  <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">
@@ -48,10 +51,12 @@
                 «Національна федерація хортинг фехтування України»).
             </p>
 
-            <p class="std__text" data-aos="fade-up" data-aos-duration="1000">
-                <a href="downloads/anketa_member.doc" download>
-                   ССЫЛКИ НА ФАЙЛЫ ДОКУМЕНТОВ</a>
-            </p>
+                <p class="std__text" data-aos="fade-up" data-aos-duration="1000">
+                <a href="/downloads/anketa_org_head.doc" download>
+                    Анкета</a><br>
+                         <a href="/downloads/zayava_org.doc" download>
+                    Заява</a>
+                    </p>
         </v-container>
     </div>
 </template>

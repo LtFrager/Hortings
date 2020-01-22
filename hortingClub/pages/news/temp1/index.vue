@@ -6,42 +6,51 @@
         </h2>
 
         <div>
-            <img :src="news.img" alt="img">
+            <img src="/img/tempnews/1.jpg" alt="img">
             <p class="std__text">
-                Want a hotter, healthier body and a longer, happier life? Cycling is a perfect activity, we create
-                content that engages and informs, and we complement it with practical tools to make living healthy
-                an easier and sustainable process. We started a tradition when our doors first opened in 2007 of
-                doing introductions at the beginning of each class – a tradition which has been adopted by Sportek
-                gyms all over the country.
+                11 грудня 2019 року у стінах Національного університету державної фіскальної служби України в місті
+                Ірпінь (Київська область) пройшла презентація ХОРТИНГ ФЕХТУВАННЯ.
+                На заході були присутні начальник кафедри спеціальних дисциплін та організації професійної підготовки
+                НУДФСУ Грищук Віктор Леонідович, а також, викладачі, офіцери державної фіскальної служби України та
+                курсанти Університету державної фіскальної служби України.
             </p>
             <p class="std__text">
-                We create content that engages and informs, and we complement it with practical tools to make
-                living healthy an easier and sustainable process. We started a tradition when our doors first
-                opened in 2007 of doing introductions at the beginning of each class – a tradition which has been
-                adopted by Sportek gyms all over the country. Also, while many of our workouts are timed and
-                competitive, it is all done in a supportive and team-oriented environment. Welcome!
+                В ході презентації відбулася демонстрація спеціального тренувального спорядження: зброї та захисту з
+                ХОРТИНГ ФЕХТУВАННЯ. Вперше була презентована навчальна програма з ХОРТИНГ ФЕХТУВАННЯ з демонстрацією
+                навчально-тренувального процесу.
+                Також були представлені спортивні номінації – розділи – ХОРТИНГ ФЕХТУВАННЯ: “спортивна рубка шаблею” та
+                “спортивний двобій”.
             </p>
             <p class="std__text">
-                There’s nothing better than having your very own coach and mentor. Need an extra push? Our personal
-                trainers are certified experts in exercise physiology, anatomy, training program development,
-                exercise application and fitness assessments. They work for you no matter your age or fitness
-                level.
+                Під час демонстрації розділу “спортивна рубка” президентом Київської обласної федерації хортинг
+                фехтування Андрощуком Дмитром Михайловичем було проведено показовий виступ з техніки рубки гострою
+                шаблею спеціальних предметів – масогабаритних мішеней.
+                Далі відбувся не менш видовищний спортивний двобій між двома спортсменами-фехтувальниками за правилами
+                Національної федерації хортинг фехтування України.
             </p>
             <p class="std__text">
-                The importance of will-power is recognized by most men, yet few deliberately give any time or
-                thought to its development. Why we resist one thing and yield to another may be due to "the
-                strongest motive," but what more particularly concerns us in the study of self-confidence is in
-                what way this mighty power can be built and directed.
+                Наприкінці заходу було проведено майстер-клас з ХОРТИНГ ФЕХТУВАННЯ для всіх бажаючих, під керівництвом
+                інструктора з хортинг фехтування та президента Київської федерації хортинг фехтування Рога Максима
+                Вікторовича.
+                По завершені заходу, що тривав близько трьох годин, між кафедрою спеціальних дисциплін та організації
+                професійної підготовки НУДФСУ та Національною федерацією хортинг фехтування України було укладено
+                договір про співробітництво.
             </p>
             <p class="std__text">
-                Gym caters for all levels of fitness. Among its most impressive aspects are the variety of classes
-                such as spinning for cardio fitness and Body Pump for burning off the excess weight. The gym
-                instructors are another plus point – professional, knowledgeable, dedicated and friendly. The
-                equipment is all brand new and state of the art.
+                Національна федерація хортинг фехтування України виражає подяку Університету державної фіскальної служби
+                України в особі Грищука Віктора Леонідовича, Буток Олени Володимирівни, Звєрєва Антона Віталійовича,
+                Мухіна Олександра Анатолійовича та Єрьоменка Едуарда Анатолійовича за всебічну підтримку та
+                зацікавленість у розбудові та розвитку новітнього українського національного виду спорту – ХОРТИНГ
+                ФЕХТУВАННЯ.
             </p>
+            <p class="std__text">
+                Дякуємо за довіру! Працюємо разом – перемагаємо разом!
+
+            </p>
+
         </div>
 
-          <button class="std__button" @click="$router.push('/news/')">До новин</button>
+        <button class="std__button" @click="$router.push('/news/')">До новин</button>
     </v-container>
 </template>
 <script>
@@ -50,8 +59,8 @@
             return {
                 news: {
                     img: '/img/index/news/img1.jpg',
-                    date: 'Feb 11, 2019',
-                    title: 'WHAT DOES DISCIPLINE LOOK LIKE?',
+                    date: '11.11.2019',
+                    title: 'ХОРТИНГ ФЕХТУВАННЯ у Національному університеті державної фіскальної служби України',
                     media: ['/img/index/news/img1.jpg', '/img/index/news/img1.jpg', '/img/index/news/img1.jpg',
                         '/img/index/news/img1.jpg'
                     ]
@@ -67,10 +76,12 @@
         padding-top: 60px;
         padding-bottom: 40px;
         min-height: 80vh;
-    p{
-       text-indent: 1.5em;
-       margin-bottom: 32px;
-    }
+
+        p {
+            text-indent: 1.5em;
+            margin-bottom: 32px;
+        }
+
         img {
             float: left;
             margin-right: 30px;
@@ -83,8 +94,9 @@
                 padding-bottom: 12px;
             }
         }
-    button{
-        margin: auto;
-    }
+
+        button {
+            margin: auto;
+        }
     }
 </style>

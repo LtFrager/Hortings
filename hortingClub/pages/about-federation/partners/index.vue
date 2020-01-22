@@ -3,7 +3,7 @@
           <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
                 <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000"
                     class="subtitle"></span>
-                Партнёры
+               НАШІ ПАРТНЕРИ
             </h2>
 
          <promo-cards :data="ourPhotos" />
@@ -44,6 +44,20 @@
                         category: '',
                         title: '',
                         text: 'КАФЕДРА СПЕЦІАЛЬНИХ ДИСЦИПЛІН ТА ОРГАНІЗАЦІЇ ПРОФЕСІЙНОЇ ПІДГОТОВКИ НУДФСУ',
+                    },
+                   {
+                          img: '/img/partners/partners_kolodach.jpg',
+                        link:'',
+                        category: '',
+                        title: '',
+                        text: 'ВІТЧИЗНЯНИЙ НОЖОВИЙ БРЕНД',
+                    },
+                        {
+                          img: '/img/partners/forge1.jpg',
+                        link:'',
+                        category: 'СПОРТИВНА ЗБРОЯ ТА ЗАХИСТ ДЛЯ ХОРТИНГ ФЕХТУВАННЯ',
+                        title: '',
+                        text: 'КУЗНЯ ФАНТАЗІЙ',
                     },
                 ],
             }

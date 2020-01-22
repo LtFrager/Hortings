@@ -1,7 +1,7 @@
 <template>
     <div>
         <text-block :data="textBlockAboutUs" />
-        
+
         <div class="top-bot-paddimg">
             <v-container>
                 <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
@@ -16,8 +16,26 @@
                     - питну воду;<br>
                     - стандартну медичну довідку, що дозволяє заняття фізкультурою та спортом.<br>
                 </p>
+                <div style="text-align:center">
+                    <img style="max-width:640px;" width="100%" src="/img/gear/gear2.jpg" alt="">
+                </div>
 
-                   <a href="#">Скачать список снаряжения</a>
+                <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
+                    <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle"></span>
+                    "Синтшабля"
+                </h2>
+                <img width="100%" src="/img/gear/SynthSaber0.jpg" alt="">
+                <p class="std__text" data-aos="fade-up" data-aos-duration="1000">
+                    1) вістря клинка;<br>
+                    2) лезо клинка;<br>
+                    3) обух клинка;<br>
+                    4) гарда;<br>
+                    5) дужка гарди;<br>
+                    6) рукоятка;<br>
+                    7) яблуко рукоятки.
+                </p>
+
+                <a href="/downloads/horting fencing equipment for training.doc" download>Скачать список снаряжения</a>
             </v-container>
         </div>
 

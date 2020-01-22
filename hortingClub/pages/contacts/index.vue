@@ -1,14 +1,14 @@
 <template>
     <div>
-        <my-map />
+        <my-map :data="locationData" />
 
-        <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"
+        <!-- <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"
             class="std__title text__black text-xs-center">
             <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">контакти </span>
             Секцiй
-        </h2>
+        </h2> -->
 
-        <sections :data="SectionsData" />
+        <!-- <sections :data="SectionsData" /> -->
     </div>
 
 </template>
@@ -30,25 +30,65 @@
         },
         data() {
             return {
-                textBlock: [{
-                    textLeft: true,
-                    img: '/img/index/index3.jpg',
-                    subtitle_top: 'Gladiatoria',
-                    title: 'ГДЕ ПРОХОДЯТ ЗАНЯТИЯ?',
-                    boldText: ' Club Gladiatoria - это инициативная группа энтузиастов-исследователей и любителей искусства фехтования клинковым оружием. ',
-                    paragrafs: [
-                        ' С 1-го сентября - в зале № 229 спортивного комплекса Киевского университета имени Бориса Гринченко по адресу ул.Маршала Тимошенко 13Б, ст. метро Минская.',
-                        'В теплое время - на открытой площадке возле ст. метро Оболонь рядом со школой-лицеем №157.',
-                    ]
-                }],
-
-
-                titlePromoGoToTraining: [{
-                    img: '/img/about/image2.jpg ',
-                    subtitle_top: 'ЗАПИСАТЬСЯ НА ТРЕНИРОВКУ',
-                    title: 'Первая тренеровка бесплатно',
-                    subtitle_bottom: 'Наши телефоны: 068 978-48-85, 095 282-09-67, 073 155-39-07,E-mail: horting.fencing@gmail.com, kendo.obolon@gmail.com ',
-                }],
+                  locationData: [{
+                        active: 1,
+                        title: 'Київ',
+                        text: '',
+                        contactsData: [{
+                                contacsTitle: 'Адресса',
+                                contactsContent: [
+                                    '04205, Київ, пр-т Оболонський, 10-53.',
+                                ]
+                            },
+                            {
+                                contacsTitle: 'Телефон',
+                                contactsContent: [
+                                    '+38-068-978-48-85',
+                                    '+38-073-155-39-07'
+                                ]
+                            },
+                            {
+                                contacsTitle: 'E-mail',
+                                contactsContent: [
+                                    'horting.fencing@gmail.com',
+                                ]
+                            }
+                        ],
+                        position: {
+                            lat: 50.4547,
+                            lng: 30.5238
+                        }
+                    },
+                    // {
+                    //     active: 2,
+                    //     title: 'Днепропетровск',
+                    //     text: 'Place 2 active  Plase for text',
+                    //     contactsData: [{
+                    //             contacsTitle: 'Adress',
+                    //             contactsContent: [
+                    //                 '2 4096 N Highland St, Arlington VA 32101, USA',
+                    //             ]
+                    //         },
+                    //         {
+                    //             contacsTitle: 'Phone',
+                    //             contactsContent: [
+                    //                 '800 1234 56 78',
+                    //                 '800 1234 56 78'
+                    //             ]
+                    //         },
+                    //         {
+                    //             contacsTitle: 'mail',
+                    //             contactsContent: [
+                    //                 'school@company.com',
+                    //             ]
+                    //         }
+                    //     ],
+                    //     position: {
+                    //         lat: 50.4547,
+                    //         lng: 10.123238
+                    //     }
+                    // },
+                ],
 
                 SectionsData: [
                     {

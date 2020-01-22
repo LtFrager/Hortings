@@ -44,7 +44,7 @@
             return {
                 textBlock1: [{
                     textLeft: true,
-                    img: '/img/about-horting/1.jpg',
+                    img: '/img/about-horting/about_hf-3.jpg',
                     subtitle_top: 'ПРАВИЛА',
                     title: 'ПРАВИЛА ЗМАГАНЬ',
                     boldText: 'ХОРТИНГ ФЕХТУВАННЯ - сучасний спорт з давньою традицією',

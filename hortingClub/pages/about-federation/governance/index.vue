@@ -3,7 +3,7 @@
           <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
                 <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000"
                     class="subtitle"></span>
-                Руководство
+                КЕРІВНИЦТВО
             </h2>
 
          <promo-cards :data="ourPhotos1" />
@@ -11,7 +11,7 @@
              <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
                 <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000"
                     class="subtitle"></span>
-                Почётные члены
+               ПОЧЕСНІ ЧЛЕНИ ФЕДЕРАЦІЇ
             </h2>
 
          <promo-cards :data="ourPhotos2" />
@@ -46,13 +46,13 @@
                         title: 'Зінченко Валерій Олександрович',
                         text: '',
                     },
-                //    {
-                //         img: '/img/governance/pres_havrilyak.jpg',
-                //         link:'',
-                //         category: 'Должность',
-                //         title: 'Имя фамилия',
-                //         text: 'НЕмного текста (опционально)',
-                //     },
+                   {
+                        img: '/img/governance/rog.jpg',
+                        link:'',
+                        category: 'Віце-президент НФХФУ',
+                        title: 'РОГ МАКСИМ ВІКТОРОВИЧ',
+                        text: '',
+                    },
                 ],
                 ourPhotos2: [{
                         img: '/img/governance/pochet_eremenko.jpg',

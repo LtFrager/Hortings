@@ -8,14 +8,14 @@
           НФХФУ та обласних фед-цій
         </h2>
         <ul class="tab_list layout row wrap" data-aos="slide-right" data-aos-duration="1000">
-            <li v-for="(item,i) in  locationData" :key="i" class="tab"
-                @click="myActive = item.active, center = item.position"
+            <li v-for="(item,i) in  data" :key="i" class="tab"
+                @click="myActive = item.active, center = item.position , defZoom=12"
                 v-bind:class="{ active:  myActive == item.active }">
                 {{item.title}}
             </li>
         </ul>
                 <!-- <transition-group name="fade" mode="out-in"> -->
-                    <ul class="location_content" v-for="(item,i) in  locationData" :key="i"
+                    <ul class="location_content" v-for="(item,i) in  data" :key="i"
                       v-if="myActive == item.active" >
                         <p class="std__text text_grey">
                             {{item.text}}
@@ -32,8 +32,8 @@
                 <!-- </transition-group> -->
             </v-flex>
             <v-flex data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-                <GmapMap class="map-size" v-bind:center="center" v-bind:zoom="14" :options="options">
-                    <GmapMarker v-for="(item, index) in  locationData" v-bind:key="index"
+                <GmapMap class="map-size" v-bind:center="center" v-bind:zoom="defZoom" :options="options">
+                    <GmapMarker v-for="(item, index) in  data" v-bind:key="index"
                         v-bind:position="item.position" @click="center=item.position" />
                 </GmapMap>
             </v-flex>
@@ -42,6 +42,7 @@
 </template>
 <script>
     export default {
+        props:['data'],
         data() {
             return {
                 center: {
@@ -49,182 +50,8 @@
                     lng: 30.5238
                 },
                 myActive: 1,
-
-                locationData: [{
-                        active: 1,
-                        title: 'Киев',
-                        text: 'Place 1 active  Plase for text',
-                        contactsData: [{
-                                contacsTitle: 'Adress',
-                                contactsContent: [
-                                    '1 4096 N Highland St, Arlington VA 32101, USA',
-                                ]
-                            },
-                            {
-                                contacsTitle: 'Phone',
-                                contactsContent: [
-                                    '800 1234 56 78',
-                                    '800 1234 56 78'
-                                ]
-                            },
-                            {
-                                contacsTitle: 'mail',
-                                contactsContent: [
-                                    'school@company.com',
-                                ]
-                            }
-                        ],
-                        position: {
-                            lat: 50.4547,
-                            lng: 30.5238
-                        }
-                    },
-                    {
-                        active: 2,
-                        title: 'Днепропетровск',
-                        text: 'Place 2 active  Plase for text',
-                        contactsData: [{
-                                contacsTitle: 'Adress',
-                                contactsContent: [
-                                    '2 4096 N Highland St, Arlington VA 32101, USA',
-                                ]
-                            },
-                            {
-                                contacsTitle: 'Phone',
-                                contactsContent: [
-                                    '800 1234 56 78',
-                                    '800 1234 56 78'
-                                ]
-                            },
-                            {
-                                contacsTitle: 'mail',
-                                contactsContent: [
-                                    'school@company.com',
-                                ]
-                            }
-                        ],
-                        position: {
-                            lat: 50.4547,
-                            lng: 10.123238
-                        }
-                    },
-                    {
-                        active: 3,
-                        title: 'Черкассы',
-                        text: 'Place 3 active  Plase for text',
-                        contactsData: [{
-                                contacsTitle: 'Adress',
-                                contactsContent: [
-                                    '3 4096 N Highland St, Arlington VA 32101, USA',
-                                ]
-                            },
-                            {
-                                contacsTitle: 'Phone',
-                                contactsContent: [
-                                    '800 1234 56 78',
-                                    '800 1234 56 78'
-                                ]
-                            },
-                            {
-                                contacsTitle: 'mail',
-                                contactsContent: [
-                                    'school@company.com',
-                                ]
-                            }
-                        ],
-                        position: {
-                            lat: 50.4547,
-                            lng: 20.5238
-                        }
-                    },
-                     {
-                        active: 4,
-                        title: 'Одесса',
-                        text: 'Place 4 active  Plase for text',
-                        contactsData: [{
-                                contacsTitle: 'Adress',
-                                contactsContent: [
-                                    '3 4096 N Highland St, Arlington VA 32101, USA',
-                                ]
-                            },
-                            {
-                                contacsTitle: 'Phone',
-                                contactsContent: [
-                                    '800 1234 56 78',
-                                    '800 1234 56 78'
-                                ]
-                            },
-                            {
-                                contacsTitle: 'mail',
-                                contactsContent: [
-                                    'school@company.com',
-                                ]
-                            }
-                        ],
-                        position: {
-                            lat: 54.4547,
-                            lng: 20.5238
-                        }
-                    },
-                     {
-                        active: 5,
-                        title: 'Кировоград',
-                        text: 'Place 5 active  Plase for text',
-                        contactsData: [{
-                                contacsTitle: 'Adress',
-                                contactsContent: [
-                                    '3 4096 N Highland St, Arlington VA 32101, USA',
-                                ]
-                            },
-                            {
-                                contacsTitle: 'Phone',
-                                contactsContent: [
-                                    '800 1234 56 78',
-                                    '800 1234 56 78'
-                                ]
-                            },
-                            {
-                                contacsTitle: 'mail',
-                                contactsContent: [
-                                    'school@company.com',
-                                ]
-                            }
-                        ],
-                        position: {
-                            lat: 52.4547,
-                            lng: 20.5238
-                        }
-                    },
-                    {
-                        active: 6,
-                        title: 'Киевская Обласная',
-                        text: 'Place 6 active  Plase for text',
-                        contactsData: [{
-                                contacsTitle: 'Adress',
-                                contactsContent: [
-                                    '1 4096 N Highland St, Arlington VA 32101, USA',
-                                ]
-                            },
-                            {
-                                contacsTitle: 'Phone',
-                                contactsContent: [
-                                    '800 1234 56 78',
-                                    '800 1234 56 78'
-                                ]
-                            },
-                            {
-                                contacsTitle: 'mail',
-                                contactsContent: [
-                                    'school@company.com',
-                                ]
-                            }
-                        ],
-                        position: {
-                            lat: 50.4547,
-                            lng: 31.5238
-                        }
-                    },
-                ],
+                defZoom:5,
+              
                 options: {
                     disableDefaultUI: true,
                     // scrollwheel: false,
