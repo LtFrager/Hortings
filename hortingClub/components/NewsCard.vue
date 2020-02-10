@@ -1,6 +1,5 @@
 <template>
     <v-card data-aos="flip-left" data-aos-duration="1000" data-aos-delay="00" hover class="news__item">
-
         <div class="item__img" :style="'background-image:url(' + data.img +')'">
             <nuxt-link v-if="data.link" :to="data.link" class="item__img-link">
             </nuxt-link>
@@ -46,7 +45,8 @@
 </script>
 
 <style lang="scss" scoped>
-    .news__item {
+
+     .news__item {
         cursor: default;
         margin: 12px;
 
@@ -59,7 +59,8 @@
         }
 
         .item__img {
-            height: 220px;
+            height: 0;
+            padding-top: 85%;
             background-position: center;
             background-size: cover;
             position: relative;
@@ -70,6 +71,25 @@
                 height: 100%;
                 background: none;
             }
+
+            .tag-field {
+                flex-wrap: wrap-reverse;
+                display: flex;
+                flex-direction: row-reverse;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                .tag-field_tag {
+                    background: #111;
+                    color: #FBBC04;
+                    padding: 2px 6px;
+                    font-size: 12px;
+                    display: block;
+                    margin: 2px;
+                }
+            }
+
         }
 
         .item__date {
@@ -110,4 +130,5 @@
             }
         }
     }
+
 </style>

@@ -140,10 +140,10 @@
                 title: 'СПОРЯДЖЕННЯ ТА ЕКІПИРУВАННЯ ',
                 link: '/about-horting-fencing/gear',
               },
-              {
-                title: 'ПРАВИЛА ЗМАГАНЬ',
-                link: '/about-horting-fencing/tournament-rules',
-              },
+              // {
+              //   title: 'ПРАВИЛА ЗМАГАНЬ',
+              //   link: '/about-horting-fencing/tournament-rules',
+              // },
             ]
           },
           {

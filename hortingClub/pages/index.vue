@@ -6,7 +6,16 @@
       <promo-cards :data="promoData" />
     </div> -->
 
- 
+    <div class="mainvideo">
+        <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
+        <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle"> Хортінг Фехтування у школі</span>
+        
+      </h2>
+      <div>
+        <iframe class="video" src="https://www.youtube.com/embed/ZZp4wfeMKe0" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
     <!-- <text-block :data="textBlockAboutUs" /> 
 
     <title-promo :data="titlePromoData_1" /> 
@@ -27,7 +36,8 @@
 
     <v-container>
       <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
-        <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">КОРИСНА ІНФОРМАЦІЯ</span>
+        <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">КОРИСНА
+          ІНФОРМАЦІЯ</span>
         НОВИНИ
       </h2>
       <news :data="newsData" />
@@ -64,7 +74,8 @@
             orangeTitle: 'ХОРТИНГ',
             title: 'ФЕХТУВАННЯ',
             text: 'Новітній український спорт з давньою традицією.',
-            link: ''
+            link: '',
+            videoSrc: '',
           },
           // {
           //   img: '/img/news-slider/1.jpg',
@@ -183,9 +194,19 @@
 
 
         newsData: [{
+            id: 4,
+            tags: ['all', 'annonce'],
+            tagname: ['Анонс'],
+            img: '/flag.jpg',
+            date: 'буде об`явлено',
+            title: 'ПЕРШИЙ СЕМІНАР ДЛЯ ІНСТРУКТОРІВ З ХОРТИНГ ФЕХТУВАННЯ КАМ’ЯНСЬКЕ 2020',
+            link: '/news/temp4',
+            text: '',
+          },
+          {
             id: 3,
-            tags: ['all', 'tag1'],
-            tagname: [],
+            tags: ['all', 'event'],
+            tagname: ['захід'],
             img: 'http://kubg.edu.ua/images/phocagallery/Podii/2019/12_12_fzfvs/12_12_fzfvs_09.jpg',
             date: '12.12.2019',
             title: 'Презентація ХОРТИНГ ФЕХТУВАННЯ',
@@ -193,24 +214,14 @@
             text: 'Презентація ХОРТИНГ ФЕХТУВАННЯ в рамках VІІ Всеукраїнської науково-практичнаої конференціяї «Фізичне виховання, спорт та здоров’я людини: досвід, проблеми, перспективи» ...',
           },
           {
-            id: 1,
-            tags: ['all', 'tag1'],
-            tagname: [],
+            id: 2,
+            tags: ['all', 'event'],
+            tagname: ['захід'],
             img: '/img/tempnews/1.jpg',
             date: '11.11.2019',
             title: 'ХОРТИНГ ФЕХТУВАННЯ у Національному університеті державної фіскальної служби України',
             link: '/news/temp1',
             text: '11 грудня 2019 року у стінах Національного університету державної фіскальної служби України пройшла презентація ХОРТИНГ ФЕХТУВАННЯ ...',
-          },
-          {
-            id: 2,
-            tags: ['all', 'tag1'],
-            tagname: [],
-            img: 'http://kam.gov.ua/ua/osximage/pg/190819190982147_p13_2m/pic.jpg',
-            date: '18.08.2019',
-            title: '«Фестиваль здорового способу життя» у місті Кам’янське',
-            link: '/news/temp2',
-            text: '18 серпня у Кам’янському за підтримки міського голови Андрія Білоусова НФХФУ прийняла участь у спортивному святі, яке об’єднало більше 20-ти популярних видів спорту – «Фестиваль здорового способу життя». ...',
           },
         ],
 
@@ -225,6 +236,23 @@
 
     @media screen and (max-width: 600px) {
       top: 0px;
+    }
+  }
+
+  .mainvideo {
+    margin: auto;
+    max-width: 720px;
+    div {
+      height: 0;
+      padding-top: 55%;
+      position: relative;
+
+      .video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+      }
     }
   }
 </style>

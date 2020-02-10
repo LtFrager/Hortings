@@ -7,7 +7,7 @@
                 <h2 style="text-transform:uppercase" data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
                     <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">ХОРТИНГ
                         ФЕХТУВАННЯ </span>
-                    Більш ніж спорт!
+                    БІЛЬШЕ НІЖ СПОРТ!
                 </h2>
 
                 <p class="std__text" data-aos="fade-up" data-aos-duration="1000">

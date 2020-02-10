@@ -55,7 +55,7 @@
             return {
                 textBlockAboutUs: [{
                     textLeft: true,
-                    img: '/img/about-horting/about_hf-3.jpg',
+                    img: '/img/about-horting/gear0.jpg',
                     subtitle_top: 'СПОРЯДЖЕННЯ ТА ЕКІПІРУВАННЯ',
                     title: 'Битися так, як билися наші предки!',
                     boldText: 'Практика ХОРТИНГ ФЕХТУВАННЯ передбачає використання спеціальних обладунків та синтетичних клинків «синтшабель»',

@@ -11,7 +11,7 @@
             <v-flex xs12 sm6 md6 lg4 v-for="item in filteredItems" v-bind:key="item.id" class="list-complete-item">
                 <!-- <img class="list-complete-img" :src="'http://placehold.it/450x200?text='+item.id" alt="" /> -->
 
-                <v-card data-aos="flip-left" data-aos-duration="1000" data-aos-delay="00" hover class="news__item">
+                <!-- <v-card data-aos="flip-left" data-aos-duration="1000" data-aos-delay="00" hover class="news__item">
                     <div class="item__img" :style="'background-image:url(' + item.img +')'">
                         <nuxt-link v-if="item.link" :to="item.link" class="item__img-link">
                         </nuxt-link>
@@ -19,7 +19,7 @@
                         <a v-if="item.download" :href="item.download" download class="item__img-link">
                         </a>
 
-                        <div class="tag-field"  v-if="item.tagname">
+                        <div class="tag-field" v-if="item.tagname">
                             <span v-for="(item,i) in item.tagname" :key="i" class="tag-field_tag">{{item}}</span>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         <v-card-actions>
                             <v-spacer></v-spacer>
                             <nuxt-link v-if="item.link" :to="item.link" class="item__arrow-link">
-                               Читати більше
+                                Читати більше
                             </nuxt-link>
 
                             <a v-if="item.download" :href="item.download" download class="item__arrow-link">
@@ -46,7 +46,8 @@
                             </a>
                         </v-card-actions>
                     </v-card-text>
-                </v-card>
+                </v-card> -->
+                <news-card :data="item" />
             </v-flex>
 
 
@@ -56,10 +57,15 @@
 </template>
 
 <script>
+    import NewsCard from "@/components/NewsCard"
     export default {
         props: ['news', 'filterData'],
+          components: {
+                    NewsCard
+                },
         data() {
             return {
+              
                 isSelected: 1,
                 // FilterData: [{
                 //         id: 1,
@@ -153,91 +159,6 @@
                 &:hover {
                     opacity: .7;
                 }
-            }
-        }
-    }
-
-    .news__item {
-        cursor: default;
-        margin: 12px;
-
-        @media screen and (max-width: 768px) {
-            margin: 4px;
-        }
-
-        @media screen and (max-width: 600px) {
-            margin: 8px;
-        }
-
-        .item__img {
-            height: 0;
-            padding-top: 85%;
-            background-position: center;
-            background-size: cover;
-            position: relative;
-
-            .item__img-link {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background: none;
-            }
-
-            .tag-field {
-                flex-wrap: wrap-reverse;
-                display: flex;
-                flex-direction: row-reverse;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-
-                .tag-field_tag {
-                    background: #111;
-                    color: #FBBC04;
-                    padding: 2px 6px;
-                    font-size: 12px;
-                    display: block;
-                    margin: 2px;
-                }
-            }
-
-        }
-
-        .item__date {
-            color: #FBBC04;
-            font-size: 12px;
-            line-height: 18px;
-            font-weight: 400;
-        }
-
-        .item__title {
-
-            a {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: #232a35;
-                font-size: 18px;
-                line-height: 1.2307;
-                font-weight: 700;
-                transition: 1s;
-
-                &:hover {
-                    color: #FBBC04;
-                    transition: .3s;
-                }
-            }
-        }
-
-        .item__arrow-link {
-            color: #FBBC04;
-            text-decoration: none;
-            font-size: 14px;
-            transition: 1s;
-
-            &:hover {
-                color: #232a35;
-                font-weight: 700;
-                transition: .3s;
             }
         }
     }

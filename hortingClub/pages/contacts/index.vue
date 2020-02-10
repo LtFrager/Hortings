@@ -35,7 +35,7 @@
                         title: 'Київ',
                         text: '',
                         contactsData: [{
-                                contacsTitle: 'Адресса',
+                                contacsTitle: 'Адреса',
                                 contactsContent: [
                                     '04205, Київ, пр-т Оболонський, 10-53.',
                                 ]
