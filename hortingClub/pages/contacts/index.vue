@@ -6,9 +6,9 @@
             class="std__title text__black text-xs-center">
             <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">контакти </span>
             Секцiй
-        </h2> -->
+        </h2>
 
-        <!-- <sections :data="SectionsData" /> -->
+        <sections :data="SectionsData" /> -->
     </div>
 
 </template>
@@ -92,13 +92,14 @@
 
                 SectionsData: [
                     {
-                        cityName: "City1",
+                        cityName: "Київ",
                         citySections: [{
-                                sectionName: "Section 1",
+                                sectionName: "Клуб ХОРТИНГ ФЕХТУВАННЯ у 75-й гімназії міста Києва.",
+                                // Розклад занять: Понеділок, середа, п'ятниця з 15.30 до 17.30
                                 sectionsDescr: [{
-                                    sectionPhone: ["phone1", "phone2"],
-                                    sectionEmail: ["mail1", "mail2"],
-                                    sectionAdress: ["link", "adress"],
+                                    sectionPhone: ["+380688775404", "+380673454191"],
+                                    // sectionEmail: ["mail1", "mail2"],
+                                    sectionAdress: ["link", "Бутишів провулок, 11, Київ, 02000"],
                                 }]
                             },
                             {
@@ -112,6 +113,7 @@
                         ]
                     },
 
+            
                     {
                         cityName: "City2",
                         citySections: [{

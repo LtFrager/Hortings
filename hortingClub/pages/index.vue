@@ -7,9 +7,10 @@
     </div> -->
 
     <div class="mainvideo">
-        <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
-        <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle"> Хортінг Фехтування у школі</span>
-        
+      <h2 data-aos="fade-down" data-aos-duration="1000" class="std__title text__black text-xs-center">
+        <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle"> Хортінг Фехтування у
+          школі</span>
+
       </h2>
       <div>
         <iframe class="video" src="https://www.youtube.com/embed/ZZp4wfeMKe0" frameborder="0"
@@ -191,40 +192,38 @@
           link: '/'
         }],
 
-
-
         newsData: [{
+            id: 6,
+            tags: ['all', 'event'],
+            tagname: ['захід'],
+            img: '/img/tempnews/temp6.jpg',
+            date: '24.02.2020',
+            title: 'День Героїв Небесної Сотні',
+            link: '/news/temp6',
+            text: 'До цієї дати пройшов військово-патріотичний захід Федерації хортинг фехтування у Печерській гімназії № 75. ...',
+          },
+          {
+            id: 5,
+            tags: ['all', 'event'],
+            tagname: ['захід'],
+            img: '/img/tempnews/temp5.jpg',
+            date: '12.02.2020',
+            title: 'ХОРТИНГ ФЕХТУВАННЯ в Університетському коледжі Київського університету імені Бориса Грінченка',
+            link: '/news/temp5',
+            text: '12.02.2020 р. в межах програми «Захист Вітчизни» (розділ «Прикладна фізична підготовка, самозахист»), студенти 1 курсу Університетського коледжу ...',
+          },
+          {
             id: 4,
             tags: ['all', 'annonce'],
             tagname: ['Анонс'],
-            img: '/flag.jpg',
+            img: '/img/about-horting/1.jpg',
             date: 'буде об`явлено',
-            title: 'ПЕРШИЙ СЕМІНАР ДЛЯ ІНСТРУКТОРІВ З ХОРТИНГ ФЕХТУВАННЯ КАМ’ЯНСЬКЕ 2020',
+            title: ' ПЕРШИЙ СЕМІНАР ДЛЯ ІНСТРУКТОРІВ З ХОРТИНГ ФЕХТУВАННЯ У МІСТІ КАМ’ЯНСЬКЕ',
             link: '/news/temp4',
             text: '',
           },
-          {
-            id: 3,
-            tags: ['all', 'event'],
-            tagname: ['захід'],
-            img: 'http://kubg.edu.ua/images/phocagallery/Podii/2019/12_12_fzfvs/12_12_fzfvs_09.jpg',
-            date: '12.12.2019',
-            title: 'Презентація ХОРТИНГ ФЕХТУВАННЯ',
-            link: '/news/temp3',
-            text: 'Презентація ХОРТИНГ ФЕХТУВАННЯ в рамках VІІ Всеукраїнської науково-практичнаої конференціяї «Фізичне виховання, спорт та здоров’я людини: досвід, проблеми, перспективи» ...',
-          },
-          {
-            id: 2,
-            tags: ['all', 'event'],
-            tagname: ['захід'],
-            img: '/img/tempnews/1.jpg',
-            date: '11.11.2019',
-            title: 'ХОРТИНГ ФЕХТУВАННЯ у Національному університеті державної фіскальної служби України',
-            link: '/news/temp1',
-            text: '11 грудня 2019 року у стінах Національного університету державної фіскальної служби України пройшла презентація ХОРТИНГ ФЕХТУВАННЯ ...',
-          },
-        ],
 
+        ],
       }
     }
   }
@@ -242,6 +241,7 @@
   .mainvideo {
     margin: auto;
     max-width: 720px;
+
     div {
       height: 0;
       padding-top: 55%;
