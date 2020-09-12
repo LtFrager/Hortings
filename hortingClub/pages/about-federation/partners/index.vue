@@ -59,13 +59,13 @@
                         title: '',
                         text: 'КУЗНЯ ФАНТАЗІЙ',
                     },
-                    // {
-                    //       img: '/img/partners/forge1.jpg',
-                    //     link:'http://lezo.ua/',
-                    //     category: 'СПОРТИВНА ЗБРОЯ ТА ЗАХИСТ ДЛЯ ХОРТИНГ ФЕХТУВАННЯ',
-                    //     title: '',
-                    //     text: 'КУЗНЯ ФАНТАЗІЙ',
-                    // },
+                    {
+                          img: '/img/partners/horting_kozura.jpg',
+                        link:'',
+                        category:'Громадська спілка',
+                        title: '',
+                        text: '"Військово-патріотичний хортинг України"',
+                    },
                 ],
             }
         }

@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-layout row wrap>
-            <v-flex xs12 sm6 md4 v-for="(item ,i) in data" :key="i" style="padding: 0 6px;">
+            <v-flex xs12 v-for="(item ,i) in data" :key="i" style="padding: 0 6px;">
                 <h3 class="section_list-city">{{item.cityName}}</h3>
                 <ul class="section_list">
                     <li class="section_list-item" v-for="(item ,i) in item.citySections" :key="i">
@@ -19,7 +19,7 @@
                                 <a :href="'mailto:' + item">{{item}}</a>
                             </li>
                             <li class="descr-item">
-                                <a :href="item.sectionAdress[0]">{{item.sectionAdress[1]}}</a>
+                                <a :href="item.sectionAdress[0]" target="_blank">{{item.sectionAdress[1]}}</a>
                             </li>
                         </ul>
                         <!-- // </v-menu> -->
@@ -46,6 +46,11 @@
         padding: 0;
         list-style-type: none;
 
+            flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
         .section_list-item {
             text-transform: uppercase;
             font-size: 16px;
@@ -54,6 +59,7 @@
             color: #232a35;
             letter-spacing: 3px;
             margin-bottom: 24px;
+       max-width: 360px;
         }
     }
 

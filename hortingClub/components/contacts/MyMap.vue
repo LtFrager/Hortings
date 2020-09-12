@@ -2,7 +2,7 @@
     <v-container grid-list-xl>
    
         <v-layout row wrap>
-            <v-flex xs12 md6 data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
+            <v-flex xs12 data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
                      <h2 data-aos="fade-right" data-aos-duration="600" class="std__title text__black">
             <span data-aos="slide-up" data-aos-delay="800" data-aos-duration="1000" class="subtitle">контакти </span>
           НФХФУ та обласних фед-цій
@@ -32,10 +32,10 @@
                 <!-- </transition-group> -->
             </v-flex>
             <v-flex data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-                <GmapMap class="map-size" v-bind:center="center" v-bind:zoom="defZoom" :options="options">
+                <!-- <GmapMap class="map-size" v-bind:center="center" v-bind:zoom="defZoom" :options="options">
                     <GmapMarker v-for="(item, index) in  data" v-bind:key="index"
                         v-bind:position="item.position" @click="center=item.position" />
-                </GmapMap>
+                </GmapMap> -->
             </v-flex>
         </v-layout>
     </v-container>

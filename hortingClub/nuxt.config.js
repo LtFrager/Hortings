@@ -7,7 +7,7 @@ module.exports = {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: 'Nuxt.js + Vuetify.js project' }
+            { hid: 'description', name: 'description', content: 'ХОРТИНГ ФЕХТУВАННЯ, або український шабельний бій, це новітній український вид спорту, бойове мистецтво та засіб оздоровлення тіла і духу, що сьогодні активно розвивається в Україні!' }
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
